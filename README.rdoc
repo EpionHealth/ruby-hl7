@@ -7,8 +7,6 @@ A simple way to parse and create HL7 2.x messages with Ruby.
 
 Examples can be found in HL7::Message.
 
-The version id can be found in the HL7::VERSION constant.
-
 * Git:          http://github.com/ruby-hl7/ruby-hl7.git
 * Docs:         http://rubydoc.info/gems/ruby-hl7/1.0.3/frames
 * Rubygems:     https://rubygems.org/gems/ruby-hl7

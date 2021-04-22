@@ -1,5 +1,10 @@
 ## Overview
 
+**Version 1.4.0**
+Epion Health fork
+Start using semantic versioning correctly
+Added TXA segment
+
 **Version 1.3.2**
 Added GT1 segment
 Updated dependencies

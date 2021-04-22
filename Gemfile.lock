@@ -1,18 +1,65 @@
-PATH
-  remote: .
-  specs:
-    ruby-hl7 (1.3.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    builder (3.2.4)
     coderay (1.1.2)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.3)
     docile (1.3.2)
+    faraday (1.4.1)
+      faraday-excon (~> 1.1)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.1)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-excon (1.1.0)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.1.0)
     ffi (1.12.2-java)
+    git (1.8.1)
+      rchardet (~> 1.8)
+    github_api (0.19.0)
+      addressable (~> 2.4)
+      descendants_tracker (~> 0.0.4)
+      faraday (>= 0.8, < 2)
+      hashie (~> 3.5, >= 3.5.2)
+      oauth2 (~> 1.0)
+    hashie (3.6.0)
+    highline (2.0.3)
     json (1.8.6)
     json (1.8.6-java)
+    juwelier (2.1.3)
+      builder
+      bundler (>= 1.13)
+      git (>= 1.2.5)
+      github_api
+      highline (>= 1.6.15)
+      nokogiri (>= 1.5.10)
+      rake
+      rdoc
+      semver
+    jwt (2.2.3)
     method_source (0.9.2)
+    mini_portile2 (2.5.0)
+    multi_json (1.15.0)
+    multi_xml (0.6.0)
+    multipart-post (2.1.1)
+    nokogiri (1.11.3)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
+    nokogiri (1.11.3-java)
+      racc (~> 1.4)
+    nokogiri (1.11.3-x86-mingw32)
+      racc (~> 1.4)
+    oauth2 (1.4.7)
+      faraday (>= 0.8, < 2.0)
+      jwt (>= 1.0, < 3.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (>= 1.2, < 3)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -20,11 +67,15 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
       spoon (~> 0.0)
+    public_suffix (4.0.6)
+    racc (1.5.2)
+    racc (1.5.2-java)
+    rack (2.2.3)
     rake (13.0.1)
     rake-contrib (1.0.0)
       rake
-    rdoc (3.12.2)
-      json (~> 1.4)
+    rchardet (1.8.0)
+    rdoc (6.3.0)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -38,6 +89,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.2)
+    ruby2_keywords (0.0.4)
+    semver (1.0.1)
     simplecov (0.16.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
@@ -45,6 +98,8 @@ GEM
     simplecov-html (0.10.2)
     spoon (0.0.6)
       ffi
+    thread_safe (0.3.6)
+    thread_safe (0.3.6-java)
 
 PLATFORMS
   java
@@ -52,15 +107,15 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  bundler (~> 1.17)
+  bundler (~> 2.2)
+  juwelier (~> 2.1.0)
   pry
   rake (>= 12.3.3)
   rake-contrib
-  rdoc (~> 3.12)
+  rdoc (~> 6.3)
   rspec (>= 3.9.0)
-  ruby-hl7!
   simplecov (= 0.16.1)
   simplecov-html (~> 0.10.0)
 
 BUNDLED WITH
-   1.17.2
+   2.2.11
